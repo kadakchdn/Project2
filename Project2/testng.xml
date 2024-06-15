@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>
+		<listener class-name="Utilities.MyTestListner"></listener>
+	</listeners>
+	
+  <test thread-count="5" name="Test">
+	
+	  <parameter name="browser" value="chrome"></parameter>
+	  <parameter name="os" value="window10"></parameter>
+	  
+    <classes>
+  <class name="TestCases.TestCase1_Register_ByTakingRegisterData_From_Config"/> 
+    <!--    <class name="TestCases.TestCase1_Register_ByTakingRegisterData_From_RamdomMethods_FromUtility"/>   -->
+      <!--      <class name="TestCases.TestCase1_Register_ByTakingRegisterData_From_ExcelFile"/>-->
+       
+      
+    </classes>
+  </test> <!-- Test -->
+  
+  
+</suite> <!-- Suite -->
